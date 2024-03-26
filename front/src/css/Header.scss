@@ -1,0 +1,43 @@
+// 헤더 레이아웃(디자인 제외)
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;  
+  font-size: 20px;
+  color: black;
+}
+
+#link_header{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  width: 100vw;
+  height: 15vh;
+  
+  .wrap {
+    line-height: 15vh;
+    
+
+    &.left_link{
+      margin-left: 3em;
+      
+    }
+
+    &.right_link{
+      margin-right: 3em;
+    }
+
+    &.middle_link {
+      display: flex;
+      
+        .link_speaking {
+          padding-left: 1em;
+          padding-right: 1em;
+        }
+
+        .link_study_group{
+          padding-right: 1em;
+        }
+  }
+}
+}
