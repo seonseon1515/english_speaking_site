@@ -9,6 +9,7 @@
 
 #link_header{
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   font-weight: 700;
   width: 100vw;
@@ -34,7 +35,7 @@
           padding-left: 1em;
           padding-right: 1em;
         }
-
+        
         .link_study_group{
           padding-right: 1em;
         }
