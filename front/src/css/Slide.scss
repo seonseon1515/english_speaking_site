@@ -1,0 +1,64 @@
+@mixin slide_imging($height){
+  width: 100vw; 
+  height: $height; 
+}
+
+$slide_shape_color: black;
+
+.slide_box {
+  display: flex;
+  @include slide_imging(70vh);
+  overflow: hidden;
+  align-items: center;
+}
+
+.slide_img1 {
+  width: 100vw;
+  height: 70vh;
+  flex-shrink: 0; 
+  text-align: center;
+  object-fit: contain;
+}
+
+.slide_img2 {
+  @include slide_imging(70vh);
+  flex-shrink: 0; 
+  text-align: center;
+  object-fit: contain;
+}
+
+.slide_img3{
+  @include slide_imging(70vh);
+  flex-shrink: 0; 
+  text-align: center;
+  object-fit: contain;
+ background-color: yellow;
+}
+
+.slide_img4 {
+  @include slide_imging(70vh);
+  flex-shrink: 0; 
+  text-align: center;
+  object-fit: contain;
+  background-color: aqua;
+}
+
+.swiper-button-prev {
+  color: $slide_shape_color;
+}
+.swiper-button-prev:hover {
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+
+.swiper-button-next {
+  color: $slide_shape_color;
+}
+.swiper-button-next:hover {
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+
+.swiper-pagination-bullet{
+  background-color: $slide_shape_color;
+}

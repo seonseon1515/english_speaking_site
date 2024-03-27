@@ -12,7 +12,8 @@ export default function Header() {
         <div><Link to='/study' className='link_study_group'>스터디 그룹 모집 페이지</Link></div>
         <div><Link to='/QnA' className='link_QnA'>질문 및 고민 페이지</Link></div>
       </div>
-      <div className='wrap right_link'><Link to="/mypage">마이페이지 로고</Link></div>
+      <div className='wrap right_link'><Link to="/mypage">마이페이지 로고</Link><Link to='/login'>로그인</Link>
+      </div>
     </header>
   )
 }
