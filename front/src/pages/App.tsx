@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/App.css'
-import Page1 from './Page1';
+import NativePage from './NativePage';
 import Page2 from './Page2';
 import Page3 from './Page3';
 import Page4 from './Page4';
@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<MainPage />} />
-          <Route path="/tutor" element={<Page1 />} />
+          <Route path='/native' element={<NativePage />}/>
           <Route path="/speaking" element={<Page2 />} />
           <Route path="/study" element={<Page3 />} />
           <Route path="/QnA" element={<Page4 />} />
