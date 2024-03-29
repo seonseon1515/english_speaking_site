@@ -1,3 +1,5 @@
+@use './Variables.scss';
+
 // 세로 헤더
 * {
   padding: 0;
@@ -10,7 +12,7 @@
 #vertical {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: Variables.$vertical_header_width;
   background-color: aqua;
   align-items: flex-start;
   height: 90vh;
