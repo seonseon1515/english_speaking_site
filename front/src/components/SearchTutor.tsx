@@ -13,11 +13,9 @@ export default function SearchTutor({search}:Props) {
   console.log(filterTutor);
   return (
     <div>
-     {
+     { filterTutor.length === 0 ?
+          <p>검색된 결과가 없습니다.</p>:
       filterTutor.map((filterTutor, idx)=>{
-        if (filterTutor.length === 0){
-          return (<p>검색된 결과가 없습니다.</p>)
-        }
         return(
           <ul key={idx}>
             <li>{filterTutor.full_name}</li>
