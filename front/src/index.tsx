@@ -6,6 +6,8 @@ import { configureStore } from '@reduxjs/toolkit';
 import rootReducer from './store';
 import { composeWithDevTools } from '@redux-devtools/extension';
 
+
+
 // const store = configureStore({ reducer: rootReducer }, composeWithDevTools());
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,6 +15,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     {/* <Provider store={store}> */}
+       
       <App />
     {/* </Provider>    */}
   </React.StrictMode>
