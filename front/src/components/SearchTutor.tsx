@@ -7,15 +7,15 @@ interface Props {
 }
 
 export default function SearchTutor({search}:Props) {
-  const filterTutor = tutor_data.filter((name)=>{
-    name.full_name.replace(" ",'').toLocaleLowerCase().includes(search.toLocaleLowerCase())
+  const filterTutor:any[] = tutor_data.filter((inputName)=>{
+    return (inputName.full_name.toLowerCase().includes(search.toLowerCase()))
   })
-  
+  console.log(filterTutor);
   return (
     <div>
      {
       filterTutor.map((filterTutor, idx)=>{
-        if (filterTutor.full_name.length === 0){
+        if (filterTutor.length === 0){
           return (<p>검색된 결과가 없습니다.</p>)
         }
         return(
