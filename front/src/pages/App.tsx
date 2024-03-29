@@ -7,6 +7,8 @@ import Page4 from './Page4';
 import MainPage from './MainPage';
 import Header from '../components/Header';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import NativeProfilePage from './NativeProfilePage';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/speaking" element={<Page2 />} />
           <Route path="/study" element={<Page3 />} />
           <Route path="/QnA" element={<Page4 />} />
+        
+          <Route path='/native/:profile' element={<NativeProfilePage />} />
         </Routes>
       </BrowserRouter> 
     </div>
