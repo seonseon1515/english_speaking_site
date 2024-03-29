@@ -13,10 +13,13 @@
   justify-content: space-between;
   font-weight: 700;
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
+  position: fixed;
+  background-color: antiquewhite;
+  top: 0px;
   
   .wrap {
-    line-height: 15vh;
+    line-height: 10vh;
     
 
     &.left_link{
@@ -27,18 +30,5 @@
     &.right_link{
       margin-right: 3em;
     }
-
-    &.middle_link {
-      display: flex;
-      
-        .link_speaking {
-          padding-left: 1em;
-          padding-right: 1em;
-        }
-        
-        .link_study_group{
-          padding-right: 1em;
-        }
   }
-}
 }
