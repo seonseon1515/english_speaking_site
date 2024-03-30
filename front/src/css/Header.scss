@@ -1,3 +1,6 @@
+// 변수 사용 위해
+@use './Variables.scss';
+
 // 헤더 레이아웃(디자인 제외)
 * {
   padding: 0;
@@ -13,7 +16,7 @@
   justify-content: space-between;
   font-weight: 700;
   width: 100vw;
-  height: 10vh;
+  height: Variables.$horizontal_header_height;
   position: fixed;
   background-color: antiquewhite;
   top: 0px;
