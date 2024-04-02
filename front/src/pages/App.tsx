@@ -4,7 +4,7 @@ import '../css/Variables.scss';
 
 // routes
 import NativePage from './NativePage';
-import Page3 from './Study';
+import Page3 from './Page3';
 import Study from './Study';
 import Page4 from './Page4';
 import MainPage from './MainPage';
