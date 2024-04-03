@@ -1,3 +1,4 @@
+// swiper@8.0.0
 import React from 'react'
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,15 +9,17 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../css/Slide.scss'
 
+// https://ckeditor.com/docs/ckeditor5/latest/installation/integrations/react.html#quick-start
 
 export default function Slide() {
   SwiperCore.use([Navigation, Pagination, Autoplay])
   return (
     <div>
-    <Swiper spaceBetween={50}
+    <Swiper 
+      spaceBetween={50}
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
-      navigation
+      navigation={true}
       pagination={{ clickable: true }}
       loop={true}
       autoplay={{delay:3000}}>
