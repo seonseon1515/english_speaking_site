@@ -28,7 +28,7 @@ function App() {
             <Routes>
               <Route path='/' element={<MainPage />} />
               <Route path='/native' element={<NativePage />}/>
-              <Route path="/intoduce" element={<CourseIntroPage />} />
+              <Route path="/introduce" element={<CourseIntroPage />} />
               <Route path="/study" element={<Study />} />
               <Route path="/QnA" element={<Page4 />} />
             

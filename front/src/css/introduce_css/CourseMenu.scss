@@ -1,0 +1,34 @@
+  .courseMenu_wrap{
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    height: 120px;
+    align-items: center;
+    
+    .courseMenu {
+    margin-left: 3em;
+    width: 80px;
+    height:80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e0a9b2;
+    border-radius: 20px;
+    }
+
+    .courseMenuImg{
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+
+    }
+
+    .courseMenu:hover{
+      border: gray solid 2px;
+      border-radius: 20px;
+    }
+
+    .courseText{
+      text-align: center;
+    }
+  }
