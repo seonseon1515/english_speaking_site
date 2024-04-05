@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../css/Slide.scss'
+import '../css/Variables.scss'
 
 // https://ckeditor.com/docs/ckeditor5/latest/installation/integrations/react.html#quick-start
 
@@ -16,10 +17,11 @@ export default function Slide() {
   return (
     <div>
       <Swiper 
+        // resizeObserve={true}
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
-        navigation={true}
+        navigation
         pagination={{ clickable: true }}
         loop={true}
         autoplay={{delay:3000}}>
