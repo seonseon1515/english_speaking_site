@@ -1,4 +1,4 @@
-// 루트 css
+// 루트 scss
 
 $vertical_header_width:250px;
 $horizontal_header_height:10vh;
@@ -14,8 +14,14 @@ $horizontal_header_height:10vh;
 // 헤더 컴포넌트 제외! 모든 페이지의 컴포넌트 표시할 위치, 공간 세로, 가로 길이 설정 
 .components_space{
   width: calc(100vw - 250px);
-  height: calc(100vh - 10vh);
+  // height: calc(100vh - 10vh); -> 높이를 지정하면 그 높이 이상으로 컴포넌트를 배치할 수 없음. 스크롤 못함
   margin-left: $vertical_header_width;
   margin-top: $horizontal_header_height;
   position: static;
+  overflow: hidden;  
+  display: flex;
+  // justify-content: center; -> css 중앙 배치가 깨짐(어디서 부터 어디까지 영향을 미치는지 알고 싶음)
+  align-items: center;
+  flex-direction: column;
 }
+

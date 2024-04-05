@@ -1,0 +1,39 @@
+.introMainBox{
+  position: relative; //textbox 위치 선정
+}
+.introMainImg{
+  width: 100vw;
+  height: 50vh;
+  // width 100vw 설정 시 이미지 비율이 꺠져 보이지 않는 이미지 구하기
+}
+
+ .textBox {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  //좌측 상단 모서리가 부모에 맞게 위치
+  transform: translate(-50%, -50%); // 좀 더 정확한 위치 설정
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+
+    .text{
+      display: block;
+      color: white;
+    
+
+      &.levelText{
+        font-size: 3em;
+        font-weight: 900;
+        margin-bottom: 10vh;
+      }
+
+      &.explain{
+        font-size: 1em;
+        font-weight: 500;
+      }
+    }
+
+
+}
+

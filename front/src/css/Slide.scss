@@ -9,7 +9,7 @@
 
 
 @mixin slide_imging($height){
-  width: 100vw;
+  width: 100% !important;
   height: $height;
 }
 
@@ -18,7 +18,7 @@ $slide_shape_color: black;
 .slide_box {
   display: flex;
   @include slide_imging(70vh);
-  overflow: hidden;
+  overflow: contain;
   align-items: center;
 }
 
