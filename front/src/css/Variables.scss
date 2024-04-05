@@ -18,4 +18,9 @@ $horizontal_header_height:10vh;
   margin-left: $vertical_header_width;
   margin-top: $horizontal_header_height;
   position: static;
+  overflow: hidden;
+  display: flex;
+  // justify-content: center; -> css 중앙 배치가 깨짐(어디서 부터 어디까지 영향을 미치는지 알고 싶음)
+  align-items: center;
+  flex-direction: column;
 }
