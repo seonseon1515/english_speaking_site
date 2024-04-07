@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/App.css';
-import '../css/Variables.scss';
+import '../css/common_css/Variables.scss';
 
 // routes
 import NativePage from './NativePage';

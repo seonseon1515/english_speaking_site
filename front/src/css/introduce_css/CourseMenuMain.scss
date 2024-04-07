@@ -1,10 +1,13 @@
+@use '../common_css/Component.scss';
+
 .introMainBox{
   position: relative; //textbox 위치 선정
 }
 .introMainImg{
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   // width 100vw 설정 시 이미지 비율이 꺠져 보이지 않는 이미지 구하기
+  object-fit: fill;
 }
 
  .textBox {
@@ -33,7 +36,70 @@
         font-weight: 500;
       }
     }
+  }
+  
+   .targetWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      background-color: antiquewhite;
+
+      .verticalLine{
+        @include Component.verticalLineCss(100px);
+      }
 
 
+      .textTarget{
+        font-weight: 700;
+        font-size: 3em;
+      }
+
+      .target {
+        font-size: 1em;
+        display: block;
+      }
+
+      .targetIconBox{
+        background-color: aquamarine;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        .targetIcon{
+          width: 65px;
+          height: 65px;
+        }
+      }
+
+      .textBoxWrap {
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+
+        .verticalLine{
+          @include Component.verticalLineCss(150px)
+        }
+
+        .sentence3 {
+          font-size: 2em;
+        }
+
+        .sentence4{
+          font-size: 3em;
+          font-weight: 700;
+        }
+        .sentence5 {
+          font-size: 2em;
+        }
+    } 
 }
 

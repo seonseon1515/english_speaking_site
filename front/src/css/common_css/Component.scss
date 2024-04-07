@@ -1,0 +1,17 @@
+@use './Variables.scss';
+
+.componentLayout {
+width: 100%;
+// %, 와 vw,vh의 차이
+// % -> 부모요소 너비의 상대적(100%는 부모 요소 넓이의 100% 차지)
+// margin, padding으로 일일히 조절하는 것보다 효율적인 배치를 할 수 있는 이유
+}
+
+
+@mixin verticalLineCss($LineHeight) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid red;
+  background-color: red;
+  height: $LineHeight;
+}

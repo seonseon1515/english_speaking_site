@@ -1,6 +1,6 @@
 import React from 'react'
 import Slide from '../components/Slide';
-import '../css/Variables.scss'
+import '../css/common_css/Variables.scss';
 import '../css/mainpage_css/MainPage.scss';
 
 

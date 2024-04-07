@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Variables.scss'
+import '../css/common_css/Variables.scss'
 import CourseMenu from '../components/introduce/CourseMenu'
 import CourseMenuMain from '../components/introduce/CourseMenuMain'
 
