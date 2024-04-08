@@ -1,5 +1,5 @@
 // 변수 사용 위해
-@use './Variables.scss';
+@use './common_css/Variables.scss';
 
 // 헤더 레이아웃(디자인 제외)
 * {
@@ -11,11 +11,12 @@
 }
 
 #link_header{
+  z-index: 1000;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   font-weight: 700;
-  width: 100vw;
+  width: 100%;
   height: Variables.$horizontal_header_height;
   position: fixed;
   background-color: antiquewhite;

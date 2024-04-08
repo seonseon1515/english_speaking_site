@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../css/Slide.scss'
-import '../css/Variables.scss'
+import '../css/common_css/Variables.scss'
 
 // https://ckeditor.com/docs/ckeditor5/latest/installation/integrations/react.html#quick-start
 

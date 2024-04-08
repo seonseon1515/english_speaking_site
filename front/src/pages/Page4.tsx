@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Variables.scss'
+import '../css/common_css/Variables.scss';
 import WriteComponent from '../components/common/WriteComponent'
 
 export default function Page4() {

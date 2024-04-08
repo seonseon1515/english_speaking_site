@@ -1,4 +1,4 @@
-@use './Variables.scss';
+@use './common_css/Variables.scss';
 
 // 세로 헤더
 * {
@@ -10,22 +10,24 @@
 }
 
 #vertical {
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   width: Variables.$vertical_header_width;
   background-color: aqua;
   align-items: flex-start;
-  height: 90vh;
+  height: calc(100% - #{Variables.$horizontal_header_height});
   position: fixed;
   bottom: 0;
 
-  .top_link{
-  margin-top: 20px;
-  }
+  .wrapTopLink{
+    margin-top: 20px;
+    display: block;
+    height: inherit;
 
-  .top_link > div{
-   
-    margin-bottom: 10px;
-    font-weight: 700;
+    .top_link > div{
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
   }
 }
