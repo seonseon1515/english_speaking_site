@@ -8,7 +8,7 @@ export default function CourseMenuMain() {
     <div className='componentLayout'>
       <h1>메뉴 클릭 시 각 코스의 메인 사진 구역</h1>
       <div className="introMainBox">
-        <img src={`${process.env.PUBLIC_URL}/img/introduce/introMainExample.png`} alt="" className="introMainImg">
+        <img src={`${process.env.PUBLIC_URL}/img/introduce/introMainExample.png`} alt="intro" className="introMainImg">
         </img>
         {/* text 프롭스 전달해서 사용 */}
         <div className="textBox">
