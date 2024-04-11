@@ -17,7 +17,7 @@ export default function CourseMenuMain() {
           <p className="text explain">구체적인 설명 프롭스 문장2</p>
         </div>
       </div>
-            
+     
         <div className='targetWrap'>
           <div className="verticalLine"></div>
           <div className='textTarget'>TARGET</div>

@@ -20,8 +20,8 @@ export default function Step2() {
             </div>
           </div>
           <div className="stepImgWrap">
-            <img className='step1Monitor' src={`${process.env.PUBLIC_URL}img/introduce/course_detail_step/step1_monitor.png`} alt="monitor" />
-            <img className='step1Smartphone' src={`${process.env.PUBLIC_URL}img/introduce/course_detail_step/step1_smartPhone.png`} alt="smartphone" />
+            <img className='step1Monitor' src={`${process.env.PUBLIC_URL}/img/introduce/course_detail_step/step1_monitor.png`} alt="monitor" />
+            <img className='step1Smartphone' src={`${process.env.PUBLIC_URL}/img/introduce/course_detail_step/step1_smartPhone.png`} alt="smartphone" />
           </div>
       </div>
     <div className="verticalLine"></div>
@@ -37,9 +37,10 @@ export default function Step2() {
               <div className="stepSentence2">하나! 스마트폰으로 원어민 강사의 얼굴을 보며 수업</div>
               <div className="stepSentence3">둘! 발음, 제스처, 표정을 보며</div>
               <div className="stepSentence4">재미도 두배! 학습효과 두배!</div>
-            </div>         </div>
+            </div>
+          </div>
           <div className="stepImgWrap">
-            <img className='step2Img' src={`${process.env.PUBLIC_URL}img/introduce/course_detail_step/step2.png`} alt="step2" />
+            <img className='step2Img' src={`${process.env.PUBLIC_URL}/img/introduce/course_detail_step/step2.png`} alt="step2" />
           </div>
       </div>
 
@@ -58,7 +59,7 @@ export default function Step2() {
             </div>
           </div>
           <div className="stepImgWrap">
-            <img className='step3Img' src={`${process.env.PUBLIC_URL}img/introduce/course_detail_step/step3.png`} alt="step3" />
+            <img className='step3Img' src={`${process.env.PUBLIC_URL}/img/introduce/course_detail_step/step3.png`} alt="step3" />
           </div>
       </div>
 
@@ -77,7 +78,7 @@ export default function Step2() {
             </div>
           </div>
           <div className="stepImgWrap">
-            <img className='step4Img' src={`${process.env.PUBLIC_URL}img/introduce/course_detail_step/step4.png`} alt="step4" />
+            <img className='step4Img' src={`${process.env.PUBLIC_URL}/img/introduce/course_detail_step/step4.png`} alt="step4" />
           </div>
       </div>
       <div className="verticalLine"></div>

@@ -38,16 +38,15 @@ function App() {
             <Routes>
               <Route path='/' element={<MainPage />} />
               <Route path='/native' element={<NativePage />}/>
-              <Route path="/introduce" element={<CourseIntroPage />} />
+              <Route path="/introduce" element={<Intro_Junior />} />
               <Route path="/study" element={<Study />} />
               <Route path="/QnA" element={<Page4 />} />
   
               <Route path='/native/:profile' element={<NativeProfilePage />} />
 
-              <Route path="/introduce/discuss" element={<Intro_Discuss />} />
               <Route path="/introduce/business" element={<Intro_Business />} />
               <Route path="/introduce/interview" element={<Intro_Interview />} />
-              <Route path="/introduce/junior" element={<Intro_Junior />} />
+              <Route path="/introduce/discuss" element={<Intro_Discuss />} />
               <Route path="/introduce/news" element={<Intro_News />} />
               <Route path="/introduce/opic" element={<Intro_Opic />} />
               <Route path="/introduce/toeic" element={<Intro_Toeic />} />
