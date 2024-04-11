@@ -23,15 +23,16 @@
     .text{
       display: block;
       color: white;
-    
-
+      
+      
       &.levelText{
         font-size: 3em;
         font-weight: 900;
         margin-bottom: 10vh;
       }
-
+      
       &.explain{
+        line-height: 2em;
         font-size: 1em;
         font-weight: 500;
       }
@@ -45,7 +46,7 @@
       box-sizing: border-box;
       width: 100%;
       height: auto;
-      background-color: antiquewhite;
+      
 
       .verticalLine{
         @include Component.verticalLineCss(100px);
@@ -60,6 +61,7 @@
       .target {
         font-size: 1em;
         display: block;
+        line-height: 2em;
       }
 
       .targetIconBox{
@@ -95,6 +97,7 @@
 
         .sentence4{
           font-size: 3em;
+          line-height: 2em;
           font-weight: 700;
         }
         .sentence5 {

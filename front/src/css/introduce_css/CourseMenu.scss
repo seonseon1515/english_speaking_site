@@ -35,17 +35,24 @@
       &.news{
         width: 45px;
       }
-      }
 
-      .courseMenu:hover{
-        border: gray solid 2px;
-        border-radius: 20px;
+    }
+    
+    .courseMenu:hover{
+      border: gray solid 2px;
+      border-radius: 20px;
+    }
+    
+    .courseText{
+      margin-top: 5px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 900;
+      
+      &.speaking{
+        font-size: 12px;
       }
-
-      .courseText{
-        margin-top: 5px;
-        text-align: center;
-        font-size: 13px;
-        font-weight: 900;
       }
   }
+
+  

@@ -8,9 +8,9 @@ export default function CourseIntroPage() {
   return (
     <div className='components_space'>
       <h1>CourseIntroPage</h1>
-      <CourseMenu />
-      <CourseMenuMain />
-      <Step2 />
+        <CourseMenu />
+        <CourseMenuMain />
+        <Step2 />
     </div>
   )
 }
