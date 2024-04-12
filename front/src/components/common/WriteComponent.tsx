@@ -3,13 +3,14 @@ import React, { Component } from 'react';
 import TextEditor from '../TextEditor';
 import { useState } from 'react';
 import '../../css/common_css/Variables.scss';
+import '../../css/study_css/WriteComponent.scss';
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { NewPost } from '../../commonInterface';
 import { addPostFunc } from '../../store/PostSlice';
-
+import { Link } from 'react-router-dom';
 
 export default function WriteComponent() {
   const [data, setData] = useState("");
@@ -38,11 +39,16 @@ export default function WriteComponent() {
   return(
   <div className='components_space'>
       <div className='writeWrap'>
-        <input placeholder='제목을 작성해주세요.' className='inputTitle' type="text" onChange={(e)=>setInputTitle(e.target.value)} />
-        <div className="txtArea">
-          <TextEditor setData={setData} />
+        <div className="writeSpace">
+          <input placeholder='제목을 작성해주세요.' className='inputTitle' type="text" onChange={(e)=>setInputTitle(e.target.value)} />
+          <div className="txtArea">
+            <TextEditor setData={setData} />
+          </div>
         </div>
-        <button onClick={addPost} className="submitBtn">제출</button>
+        <div className="leftBtn">
+          <Link to='/study'><button className="cancelBtn">취소</button></Link>
+          <button onClick={addPost} className="submitBtn">제출</button>
+        </div>
       </div>
     </div>
 )
