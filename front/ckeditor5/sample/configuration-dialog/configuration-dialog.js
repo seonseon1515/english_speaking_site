@@ -4,8 +4,10 @@
  */
 
 /* eslint-env browser */
+import Editor from '../../build/ckeditor.d.ts'
 
 ( function() {
+	
 	const LOCAL_STORAGE_KEY = 'CKEDITOR_CS_CONFIG';
 
 	function createDialog() {
@@ -49,6 +51,11 @@
 	function storeConfig( config ) {
 		localStorage.setItem( LOCAL_STORAGE_KEY, JSON.stringify( config ) );
 	}
+	Editor.EditorConfig = function(config) {
+		config.disallowedContent = 'p';
+	};
 
 	window.createDialog = createDialog;
+
+	
 }() );

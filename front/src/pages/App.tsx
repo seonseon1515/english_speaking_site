@@ -24,6 +24,8 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { Discuss } from '../store/NativeFilterReducer';
 import Business from './introduce_page/Intro_Business';
+import WriteComponent from '../components/common/WriteComponent';
+import StudyPostList from '../components/study/StudyPostList';
 
 
 
@@ -50,6 +52,9 @@ function App() {
               <Route path="/introduce/news" element={<Intro_News />} />
               <Route path="/introduce/opic" element={<Intro_Opic />} />
               <Route path="/introduce/toeic" element={<Intro_Toeic />} />
+
+              <Route path='/study/write' element={<WriteComponent />} />
+              <Route path='/study/board' element={<StudyPostList />} />
             </Routes>
           </BrowserRouter> 
         </div>
