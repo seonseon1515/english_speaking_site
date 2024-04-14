@@ -72,16 +72,17 @@ export const TextEditor = ({setData}) => {
 				'tableCellProperties',
 				'tableProperties'
 			]
-		}
+		}, 
     };
 
     return (
         <CKEditor 
         editor={Editor}
         config={edrtorConfiguration}
-        data = "<p> 이곳에 내용을 작성해 주세요!</p>"
+				data
         onChange={(event, editor) => {
-            setData(editor.getData()); // 에디터 작성 내용 저장 
+					const data = editor.getData();
+            setData(data); // 에디터 작성 내용 저장 
         }}
         />
     )
