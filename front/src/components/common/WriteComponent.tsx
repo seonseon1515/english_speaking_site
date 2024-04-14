@@ -26,6 +26,7 @@ export default function WriteComponent() {
     console.log(`txtarea:${data}`)
     const newPost = {
           // 프로필 이미지 추가
+          id:posts.length+1,
           author: '작성자', 
           title:inputTitle,
           timeStamp: new Date().toLocaleString(), // 그냥 작동되는지?
@@ -36,6 +37,11 @@ export default function WriteComponent() {
     // 값이 담기지 않음
   },[inputTitle,data])
 
+  const handleEnter = (e:React.KeyboardEvent<HTMLButtonElement>) => {
+    if(e.key==='Enter'){
+      addPost();
+    }
+  }
   return(
   <div className='components_space'>
       <div className='writeWrap'>
@@ -47,7 +53,7 @@ export default function WriteComponent() {
         </div>
         <div className="leftBtn">
           <Link to='/study'><button className="cancelBtn">취소</button></Link>
-          <button onClick={addPost} className="submitBtn">제출</button>
+          <button onKeyDown={handleEnter} onClick={addPost} className="submitBtn">제출</button>
         </div>
       </div>
     </div>

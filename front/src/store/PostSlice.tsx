@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { NewPost } from '../commonInterface';
-
+import { Posts } from '../commonInterface';
 // 게시판에 해당하는 내용
 
 const initialState: { postList: NewPost[] } = {
@@ -19,11 +19,15 @@ const postSlice = createSlice({
       // state는 initialState로 초기화
       // action객체? 에는 payload(넘겨준 데이터)와 type이 있음(둘다 createSlice 사용할 때 고정값)
       state.postList.push(action.payload)
-    }
+    },
+    deletePostFunc: (state, action: {type: string, payload: NewPost}) => {
+      const postId = action.payload.id; // 내가 선택한 포스트
+      state.postList = state.postList.filter(postList => postList.id !== postId);
+    },
   }
 })
 
 // postSlice.actions : 액션 생성자들을 포함하는 객체
-export const {addPostFunc} = postSlice.actions
+export const {addPostFunc ,deletePostFunc } = postSlice.actions
 // postSlice.reducer: 상태를 업데이트하기 위한 것 
 export default postSlice.reducer;
