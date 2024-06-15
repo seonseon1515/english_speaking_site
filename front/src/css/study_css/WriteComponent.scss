@@ -1,0 +1,73 @@
+@use '../common_css/Variables.scss';
+
+.writeWrap{
+  margin-top: 50px;
+  border-radius: 30px;
+  border: gray 1px solid;
+  width: 700px;
+  padding-left:5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  // align-content: flex-end;
+  
+  .writeSpace {  
+    width: 100%;
+
+
+  .inputTitle{
+    width: 660px;
+    // 패딩값 제외
+    padding-left: 40px;
+    border: none;
+    height: 80px;
+    font-size: 40px;
+    line-height: 80px;
+    font-weight: 700;   
+    margin-bottom: 20px;
+    }
+    
+    // CKeditor 
+    
+  .ck-editor__editable { 
+    height: 450px;
+    padding: 20px;
+    }
+  }
+
+  .leftBtn{
+
+    .submitBtn{
+      @include Variables.btnYellow;
+      font-size: 20px;
+      width: 80px;
+      height: 35px;
+      margin-top: 30px;
+      border-radius: 20px;
+    }
+
+    .cancelBtn{
+      @include Variables.btnGray;
+      font-size: 20px;
+      width: 80px;
+      height: 35px;
+      margin-top: 30px;
+      border-radius: 20px;
+      margin-right: 15px;
+    }
+
+    .submitBtn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    }
+
+    .cancelBtn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    }
+}
+}

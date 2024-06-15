@@ -1,0 +1,58 @@
+  .courseMenuBar_wrap{
+    background-color: pink;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+
+    .courseMenuIcon_wrap{
+      margin-right: 3em;
+      display: flex;
+        
+    }
+
+      .courseMenu {
+      margin-left: 3em;
+      width: 70px;
+      height:70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #e0a9b2;
+      border-radius: 20px;
+      }
+
+
+      .courseMenuImg{
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+
+          
+      &.news{
+        width: 45px;
+      }
+
+    }
+    
+    .courseMenu:hover{
+      border: gray solid 2px;
+      border-radius: 20px;
+    }
+    
+    .courseText{
+      margin-top: 5px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 900;
+      
+      &.speaking{
+        font-size: 12px;
+      }
+      }
+  }
+
+  

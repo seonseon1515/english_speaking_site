@@ -1,0 +1,114 @@
+@use '../../common_css/Component.scss';
+
+$right:right;
+$left:left;
+$monitorWidth:400px;
+
+
+.step1Wrap{
+  display: flex;
+  justify-content: center;
+
+  .stepTextWrap{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+
+    .mainTextWrap{
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      text-align: $right;
+      
+      .stepTopText{
+        font-size: 3rem;
+        color: pink;
+        font-style: italic;
+      }
+      .stepTopText2{
+        font-size: 3rem;
+      }
+    }
+    
+    .stepSentenceWrap{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      text-align: $right;
+      line-height: 1.5rem;
+    }
+  }
+
+  .monitorShapeWrap{
+   width: 50%;
+   height: 50%;
+  
+    .monitorWrap{
+      background-color: pink;
+      width: 100%;
+      height: 100%;
+      
+
+      .monitorImg {
+        width: 465px;
+        height: 486px;
+        object-fit: fill;
+        position: absolute;
+      }
+    }
+
+    .screenWrap {
+      display: flex;
+      flex-direction: column;
+      margin-top: 34px;
+      left: 4.5%;
+      position: relative;
+      width: 100%;
+            
+      .screenTopBar{
+        padding-left: 10px;
+        color: white;
+        font-size: 10px;
+        font-weight: 800;
+        background-color: black;
+        height: 20px;
+        width: $monitorWidth;
+        line-height: 20px;
+  
+      }
+      .monitorLine1{
+        display: flex;
+        width: $monitorWidth;
+        
+        .monitorImg1{
+          @include Component.monitorImgSizeCss(140px,130px);
+          
+          &.marginBet{
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+
+      }
+  
+      .monitorLine2{
+        margin-top: 10px;
+        display: flex;
+        width: $monitorWidth;
+
+        .monitorImg2{
+          @include Component.monitorImgSizeCss(140px,130px);
+
+          &.marginBet{
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+      }
+  }
+  }
+}
+

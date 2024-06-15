@@ -1,0 +1,334 @@
+@use '../../common_css/Component.scss';
+
+$right:right;
+$left:left;
+$stepImgWidth: 500px;
+$stepImgHeight:400px;
+
+
+.componentLayout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+.step1Wrap{
+  display: flex;
+  justify-content: center;
+
+
+  .stepTextWrap{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    
+
+    .mainTextWrap{
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      text-align: $right;
+      padding-right: 10px;
+      
+      .stepTopText{
+        font-size: 2rem;
+        color: pink;
+        font-style: italic;
+      }
+      .stepTopText2{
+        font-size: 2rem;
+      }
+    }
+    
+    .stepSentenceWrap{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      text-align: $right;
+      font-weight: 700;
+      
+      .stepSentence1{
+        line-height: 30px;
+        font-size: 15px;
+      }
+
+      .stepSentence2{
+        line-height: 30px;
+        font-size: 15px;
+      }
+
+      .stepSentence3{
+        line-height: 30px;
+        font-size: 15px;
+      }
+
+      .stepSentence4{
+        line-height: 30px;
+        font-size: 15px;
+      }
+    }
+    
+  }
+
+  .stepImgWrap{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 15%;
+   
+
+    .step1Monitor{
+      width: $stepImgWidth;
+      height: $stepImgHeight;
+    }
+
+    .step1Smartphone{
+      border-radius: 18px;
+      object-fit: cover;
+      position: absolute;
+      top: 30%;
+      right: 20%;
+    }
+  }
+}
+.verticalLine{
+  @include Component.verticalLineCss(200px);
+}
+ 
+//step2
+.step2Wrap{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+
+  .stepTextWrap{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    
+
+    .mainTextWrap{
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      text-align: $left;
+     
+      
+      .stepTopText{
+        font-size: 2rem;
+        color: pink;
+        font-style: italic;
+      }
+      .stepTopText2{
+        font-size: 2rem;
+      }
+    }
+    
+    .stepSentenceWrap{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      text-align: $left;
+      line-height: 30px;
+      font-size: 10px;
+
+      .stepSentence1{
+        line-height: 30px;
+        font-size: 15px;
+      }
+
+      .stepSentence2{
+        line-height: 30px;
+        font-size: 15px;
+      }
+
+      .stepSentence3{
+        line-height: 30px;
+        font-size: 15px;
+      }
+
+      .stepSentence4{
+        line-height: 30px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .stepImgWrap{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 15%;
+
+    .step2Img{
+      width: $stepImgWidth;
+      height: $stepImgHeight;
+    }
+}
+}
+.verticalLine{
+  @include Component.verticalLineCss(200px);
+}
+
+  //step3
+.step3Wrap{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .stepTextWrap{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    
+    
+    .mainTextWrap{
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      text-align: $right;
+      padding-right: 10px;
+      
+      .stepTopText{
+        font-size: 2rem;
+        color: pink;
+        font-style: italic;
+      }
+      .stepTopText2{
+        font-size: 2rem;
+      }
+    }
+    
+    .stepSentenceWrap{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      text-align: $right;
+      line-height: 30px;
+      font-size: 10px;
+
+      .stepSentence1{
+        line-height: 30px;
+        font-size: 15px;
+      }
+
+      .stepSentence2{
+        line-height: 30px;
+        font-size: 15px;
+      }
+
+      .stepSentence3{
+        line-height: 30px;
+        font-size: 15px;
+      }
+
+      .stepSentence4{
+        line-height: 30px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .stepImgWrap{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 15%;
+
+    .step3Img{
+      width: $stepImgWidth;
+      height: $stepImgHeight;
+    }
+}
+}
+.verticalLine{
+  @include Component.verticalLineCss(200px);
+}
+
+  //step4
+  .step4Wrap{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  
+    .stepTextWrap{
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 50%;
+      overflow: hidden;
+      
+  
+      .mainTextWrap{
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        text-align: $left;
+       
+        
+        .stepTopText{
+          font-size: 2rem;
+          color: pink;
+          font-style: italic;
+        }
+        .stepTopText2{
+          font-size: 2rem;
+        }
+      }
+      
+      .stepSentenceWrap{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: $left;
+        line-height: 30px;
+        font-size: 10px;
+  
+        .stepSentence1{
+          line-height: 30px;
+          font-size: 15px;
+        }
+  
+        .stepSentence2{
+          line-height: 30px;
+          font-size: 15px;
+        }
+  
+        .stepSentence3{
+          line-height: 30px;
+          font-size: 15px;
+        }
+  
+        .stepSentence4{
+          line-height: 30px;
+          font-size: 15px;
+        }
+      }
+    }
+  
+    .stepImgWrap{
+      width: 50%;
+      height: 50%;
+      position: relative;
+      right: 10%;
+  
+      .step4Img{
+        width: $stepImgWidth;
+        height: $stepImgHeight;
+        object-fit: contain;
+      }
+  }
+  }
+  .verticalLine{
+    @include Component.verticalLineCss(200px);
+  }
+}
