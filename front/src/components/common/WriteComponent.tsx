@@ -11,6 +11,7 @@ import { useSelector } from 'react-redux';
 import { NewPost } from '../../commonInterface';
 import { addPostFunc } from '../../store/PostSlice';
 import { Link } from 'react-router-dom';
+import { CKEditor } from '@ckeditor/ckeditor5-react';
 
 export default function WriteComponent() {
   const [data, setData] = useState("");
@@ -30,7 +31,7 @@ export default function WriteComponent() {
           author: '작성자', 
           title:inputTitle,
           timeStamp: new Date().toLocaleString(), // 그냥 작동되는지?
-          content: data.replace(/<(?:.|\n)*?>/gm, '')
+          content:data.replace(/<(?:.|\n)*?>/gm, '').replace(/&nbsp;/g,''),
         };
         dispatch(addPostFunc(newPost));
         navigate('/study');

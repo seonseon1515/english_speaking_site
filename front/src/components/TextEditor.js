@@ -3,7 +3,7 @@
 // The editor creator to use.
 import  Editor  from 'ckeditor5-custom-build/build/ckeditor';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
-
+import '../css/common_css/WriteComponent.scss'
 
 export const TextEditor = ({setData}) => {
     const edrtorConfiguration = {
@@ -77,7 +77,7 @@ export const TextEditor = ({setData}) => {
 
     return (
         <CKEditor 
-        editor={Editor}
+        editor={TextEditor}
         config={edrtorConfiguration}
 				data
         onChange={(event, editor) => {
