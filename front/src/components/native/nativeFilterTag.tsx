@@ -9,6 +9,7 @@ import NativeFilterReducer from '../../store/NativeFilterReducer';
 import { Discuss,Business, Opic,Toeic,News,Interview,Junior } from '../../store/NativeFilterReducer';
 import MakeNativeArr from './MakeNativeArr';
 
+
 interface FilterNative {
   full_name:string;
   id:number;
@@ -75,7 +76,7 @@ export default function NativeFilterTag() {
   const btnJuniorValue = useSelector((state:any)=>{
     return state.nativeFilter.btnJuniorValue
   })
-  
+
 // 필터 배열에 추가
 // 토론
 useEffect(() => {

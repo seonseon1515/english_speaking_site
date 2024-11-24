@@ -164,6 +164,7 @@ export const nativeFilterData2 = nativeFilterData.map((data, idx) => ({
   id: idx + 1
 }));
 
+// 과정의 수를 2개 이상 배열에 각각 하나하나 일일이 추가하는 것이 아닌 코드로써 일괄적으로 전부 추가하려면 어떻게 해야할까?
 // courseArr 복제
 const courseArr = [
   '토론',
@@ -178,7 +179,8 @@ const courseArrCopy = Array.from(courseArr);
 
 // courseArr 확장
 while (courseArr.length < nativeFilterData2.length) {
-  courseArr.push(...courseArrCopy);
+  courseArr.push(...courseArr);
+  // courseArrCopy를 push 하는 것에서 코드의 가독성을 위해 courseArr로 바꿈
 }
 
 // nativeFilterData3 생성
@@ -199,5 +201,5 @@ while (levelArr.length < nativeFilterData2.length) {
 // nativeFilterData4 생성
 export const nativeFilterData4 = nativeFilterData3.map((data, idx) => ({
   ...data,
-  level: levelArr[idx]
+  level: levelArr[idx],
 }));

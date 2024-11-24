@@ -2,6 +2,7 @@ import SearchTutor from './SearchTutor'
 import { tutor_data } from '../../data/tutor_data'
 
 
+
 interface Props {
   search: string;
   inputTutor:(value:any)=>void
